@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<SotaStudio_NewsletterUnsubscribe>
+			<active>true</active>
+			<codePool>local</codePool>
+            <depends>
+                <Mage_Newsletter />
+            </depends>
+		</SotaStudio_NewsletterUnsubscribe>
+	</modules>
+</config>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <SotaStudio_NewsletterUnsubscribe>
+            <version>1.0.0</version>
+        </SotaStudio_NewsletterUnsubscribe>
+    </modules>
+    <frontend>
+        <routers>
+            <newsletter>
+                <args>
+                    <modules>
+                        <SotaStudio_NewsletterUnsubscribe before="Mage_Newsletter">SotaStudio_NewsletterUnsubscribe</SotaStudio_NewsletterUnsubscribe>
+                    </modules>
+                </args>
+            </newsletter>
+        </routers>
+        <translate>
+            <modules>
+                <SotaStudio_NewsletterUnsubscribe>
+                    <files>
+                        <default>SotaStudio_NewsletterUnsubscribe.csv</default>
+                    </files>
+                </SotaStudio_NewsletterUnsubscribe>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <sota_newsletter_unsubscribe module="SotaStudio_NewsletterUnsubscribe">
+                    <file>sota/newsletter_unsubscribe.xml</file>
+                </sota_newsletter_unsubscribe>
+            </updates>
+        </layout>
+        <secure_url>
+            <newsletter_subscriber>/newsletter/subscriber/</newsletter_subscriber>
+            <newsletter_unsubscriber>/newsletter/unsubscriber/</newsletter_unsubscriber>
+        </secure_url>
+    </frontend>
+    <global>
+        <models>
+            <sota_newsletter_unsubscribe>
+                <class>SotaStudio_NewsletterUnsubscribe_Model</class>
+            </sota_newsletter_unsubscribe>
+            <newsletter>
+                <rewrite>
+                    <subscriber>SotaStudio_NewsletterUnsubscribe_Model_Subscriber</subscriber>
+                </rewrite>
+            </newsletter>
+        </models>
+        <blocks>
+            <sota_newsletter_unsubscribe>
+                <class>SotaStudio_NewsletterUnsubscribe_Block</class>
+            </sota_newsletter_unsubscribe>
+        </blocks>
+    </global>
+</config>
