@@ -3,7 +3,7 @@
 	<modules>
 		<SotaStudio_NewsletterUnsubscribe>
 			<active>true</active>
-			<codePool>local</codePool>
+			<codePool>community</codePool>
             <depends>
                 <Mage_Newsletter />
             </depends>
