@@ -1,6 +1,6 @@
 <?php
 
-class SotaStudio_NewsletterUnsubscribe_Model_Subscriber extends Mage_Newsletter_Model_Subscriber
+class SotaStudio_NewsletterUnsubscribe_Model_Unsubscriber extends Mage_Newsletter_Model_Subscriber
 {
     /**
 	 * @var bool $_sendConfirmationSuccessEmail check if email already send
