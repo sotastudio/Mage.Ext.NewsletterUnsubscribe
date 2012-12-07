@@ -2,7 +2,7 @@
 <config>
     <modules>
         <SotaStudio_NewsletterUnsubscribe>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </SotaStudio_NewsletterUnsubscribe>
     </modules>
     <frontend>
@@ -43,7 +43,7 @@
             </sota_newsletter_unsubscribe>
             <newsletter>
                 <rewrite>
-                    <subscriber>SotaStudio_NewsletterUnsubscribe_Model_Subscriber</subscriber>
+                    <unsubscriber>SotaStudio_NewsletterUnsubscribe_Model_Unsubscribe</unsubscriber>
                 </rewrite>
             </newsletter>
         </models>
@@ -51,6 +51,11 @@
             <sota_newsletter_unsubscribe>
                 <class>SotaStudio_NewsletterUnsubscribe_Block</class>
             </sota_newsletter_unsubscribe>
+			<newsletter>
+				<rewrite>
+					<unsubscriber>SotaStudio_NewsletterUnsubscribe_Block_Unsubscribe</unsubscriber>
+				</rewrite>
+			</newsletter>
         </blocks>
     </global>
 </config>

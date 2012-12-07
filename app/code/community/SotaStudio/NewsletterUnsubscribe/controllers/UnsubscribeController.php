@@ -1,6 +1,6 @@
 <?php
 
-class SotaStudio_NewsletterUnsubscribe_UnsubscriberController extends Mage_Core_Controller_Front_Action
+class SotaStudio_NewsletterUnsubscribe_UnsubscribeController extends Mage_Core_Controller_Front_Action
 {
     public function indexAction()
     {
@@ -17,7 +17,7 @@ class SotaStudio_NewsletterUnsubscribe_UnsubscriberController extends Mage_Core_
                     Mage::throwException($this->__('Please enter a valid email address.'));
                 }
 
-                $status = Mage::getModel('newsletter/subscriber')->unsubscribeByEmail($email);
+                $status = Mage::getModel('newsletter/unsubscribe')->unsubscribeByEmail($email);
                 $session->addSuccess($this->__('You have been unsubscribed.'));
             }
             catch (Mage_Core_Exception $e) {
