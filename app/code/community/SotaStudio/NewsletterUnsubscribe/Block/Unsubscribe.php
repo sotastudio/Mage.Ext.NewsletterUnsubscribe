@@ -10,6 +10,6 @@ class SotaStudio_NewsletterUnsubscribe_Block_Unsubscribe extends Mage_Newsletter
      */
     public function getFormActionUrl()
     {
-        return $this->getUrl('newsletter/unsubscriber', array('_secure' => true));
+        return $this->getUrl('newsletter/unsubscribe', array('_secure' => true));
     }
 }
