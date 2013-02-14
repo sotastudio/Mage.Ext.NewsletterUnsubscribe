@@ -20,4 +20,4 @@ Example call via Layout Update:
 
 ## Dependencies
 
-None.
+* Mage_Newsletter
