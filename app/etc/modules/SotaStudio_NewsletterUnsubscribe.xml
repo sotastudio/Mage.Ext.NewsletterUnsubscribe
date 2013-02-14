@@ -4,9 +4,9 @@
 		<SotaStudio_NewsletterUnsubscribe>
 			<active>true</active>
 			<codePool>community</codePool>
-            <depends>
-                <Mage_Newsletter />
-            </depends>
+			<depends>
+				<Mage_Newsletter />
+			</depends>
 		</SotaStudio_NewsletterUnsubscribe>
 	</modules>
 </config>
